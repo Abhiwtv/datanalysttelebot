@@ -1,0 +1,15 @@
+fastapi
+uvicorn
+pandas
+openpyxl
+xlrd
+google-genai
+groq
+python-telegram-bot
+httpx
+beautifulsoup4
+lxml
+duckduckgo-search
+rapidfuzz
+pydantic
+python-dotenv
