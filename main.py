@@ -16,7 +16,7 @@ from interpreter import interpret_data
 from planner import planner
 from retriever import retrieve_dataset
 
-TOKEN = os.environ.get("BOT_TOKEN")
+TOKEN = os.environ["BOT_TOKEN"]
 
 app = FastAPI()
 
@@ -116,3 +116,7 @@ async def webhook(request: Request):
     await ptb.process_update(update)
 
     return {"status": "ok"}
+
+@app.get("/")
+async def root():
+    return {"status": "running"}
