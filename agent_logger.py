@@ -21,5 +21,5 @@ def log_event(event_type: str, payload: Dict[str, Any]):
         f.write(json.dumps(log_entry) + "\n")
 
 
-def get_log_url(base_url: str = "https://army-mantis-enable.ngrok-free.dev") -> str:
+def get_log_url(base_url: str = "https://datanalysttelebot.onrender.com") -> str:
     return f"{base_url}/static/agent_log.jsonl"
